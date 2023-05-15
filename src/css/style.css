@@ -1,0 +1,142 @@
+body{
+    font-family:"Poppins", sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: black;
+    color: bisque;
+}
+
+body.modo-claro{
+    background-color: bisque;
+    color: black;
+}
+
+header{
+    background-color: rgb(226, 72, 72);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform:scale(1.15);
+    cursor:pointer;
+}
+
+header #botao-alterar-tema {
+	background: none;
+	border: none;
+}
+
+
+main{
+    background-color:cadetblue;
+    color:rgb(41, 40, 40);
+    padding: 30px;
+}
+
+.modo-escuro main{
+    background-color: rgb(13, 13, 73);
+    color:rgb(41, 40, 40);
+    padding: 30px;
+}
+
+
+main .listagem-pokemon{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+	background-color: #d8e3ec;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 30px;
+	transition: 1s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.modo-escuro .cartao-pokemon{
+    background-color: black;
+    color: white;
+}
+
+.modo-escuro .cartao-pokemon:hover{
+    background-color: white;
+    color: black;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif{
+    width: 70px;
+    height: 70px;
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: green;
+}
+
+.veneno{
+    background-color: rgb(206, 97, 206);
+}
+
+.fogo{
+    background-color: red;
+}
+
+.água{
+    background-color: rgb(0, 204, 255);
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
